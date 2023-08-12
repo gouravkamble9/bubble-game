@@ -18,9 +18,10 @@ body {
 }
 .game-box {
   width: 70%;
-  height: 60%;
+  height: 70%;
   background-color: white;
   border-radius: 10px;
+
 }
 
 .score-area{
@@ -28,6 +29,7 @@ body {
     width: 100%;
     background-color: rgb(54, 181, 227);
     border-radius: 10px 10px 0 0 ;
+    margin-bottom: 5px;
 }
 
 .score-area{
@@ -84,3 +86,19 @@ body {
     background-color: rgb(17, 115, 140);
     transition: ease 0.4s;
 }
+
+@media (max-width: 400px) {
+    .game-ele{
+        flex-direction: column;
+    }
+
+    .game-box{
+        overflow: hidden;
+    }
+    
+    .game-area .bubble{
+        width: 20px;
+        height: 20px;
+
+    }
+  }

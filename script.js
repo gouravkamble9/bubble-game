@@ -6,7 +6,7 @@ var hit;
 
 function fillBubble(){
     bub="";
-    for(let i=0;i<184;i++){
+    for(let i=0;i<207;i++){
         ranNUM=randomNumber()
         bub+=`<div class="bubble">${ranNUM}</div>`
     }
