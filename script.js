@@ -1,5 +1,5 @@
 let bubble=document.querySelector(".bubble")
-var time=120
+var time=60
 var score=0
 var hit;
 
@@ -19,6 +19,9 @@ function timer(){
             if(time>=0){
                document.querySelector("#timer").textContent=time;
                time--;
+            if(time>=0 && time<10){
+                document.querySelector("#timer").style.color="red"
+            }
             }else{
                 clearInterval(timeR)
                 document.querySelector(".game-area").innerHTML=`
@@ -26,13 +29,19 @@ function timer(){
                 <h1>Game Over</h1>
                 <br>
                 <h3>Score :${score}</h3>
+                <button onclick="startGame()">Play Again</button>
                 </div>
                 `
+                document.querySelector("#score").textContent=0
                 document.querySelector("#hit").textContent=0
             }
             
         },1000)
 
+}
+
+function startGame(){
+    document.location.href="game.html"
 }
 
 function scoreIncre(){

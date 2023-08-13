@@ -70,6 +70,17 @@ body {
     margin-top: 10%;
 }
 
+.game-area .game-over button{
+    font-family: 'Roboto';
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(54, 181, 227);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .game-area .bubble{
     background-color: rgb(127, 240, 255);
     width: 15px;
