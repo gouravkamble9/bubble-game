@@ -79,6 +79,11 @@ body {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.game-area .game-over button:hover{
+    scale: 1.2;
 }
 
 .game-area .bubble{
