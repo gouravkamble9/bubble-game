@@ -100,7 +100,7 @@ body {
 }
 
 .game-area .bubble:hover{
-    background-color: rgb(17, 115, 140);
+    background-color: rgb(51, 144, 167);
     transition: ease 0.4s;
 }
 
